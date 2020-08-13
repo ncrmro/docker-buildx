@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   dd:
-    image: postgres:12.3-alpine
+    image: ncrmro/docker-buildx:19.03.10
     environment:
       DOCKER_CLI_EXPERIMENTAL: enabled
     command: >
