@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  dd:
+    image: postgres:12.3-alpine
+    environment:
+      DOCKER_CLI_EXPERIMENTAL: enabled
+    command: >
+      docker buildx version
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    build:
+      context: .
